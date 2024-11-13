@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>واجهة إدارة المستشفى</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ربط ملف CSS -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">أدارة مستشفى</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#administration"
+                aria-label="الإدارة"
+              >
+                <i class="fas fa-user-tie"></i> الإدارة
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#medical-services"
+                aria-label="الخدمات الطبية"
+              >
+                <i class="fas fa-stethoscope"></i> الخدمات الطبية
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#hospital-departments"
+                aria-label="أقسام المستشفى"
+              >
+                <i class="fas fa-hospital"></i> أقسام المستشفى
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#patients"
+                aria-label="المراجعين والمرضى"
+              >
+                <i class="fas fa-file-medical"></i> المراجعين والمرضى
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row text-center">
+        <!-- إضافة صف لتقسيم المربعات -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <!-- مربع الإدارة -->
+          <div class="section bg-light p-4 rounded shadow">
+            <!-- استخدام bg-light بدلاً من bg-lightgray -->
+            <div class="icon-container">
+              <i class="fas fa-user-tie fa-5x"></i>
+            </div>
+            <h2>
+              <a
+                href="administration.html"
+                style="text-decoration: none; color: inherit"
+                >الإدارة</a
+              >
+            </h2>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <!-- مربع الخدمات الطبية -->
+          <div class="section bg-lightgreen p-4 rounded shadow">
+            <div class="icon-container">
+              <i class="fas fa-stethoscope fa-5x"></i>
+            </div>
+            <h2>الخدمات الطبية</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <!-- مربع أقسام المستشفى -->
+          <div class="section bg-lightblue p-4 rounded shadow">
+            <div class="icon-container">
+              <i class="fas fa-hospital fa-5x"></i>
+            </div>
+            <h2>أقسام المستشفى</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <!-- مربع المراجعين والمرضى -->
+          <div class="section bg-white p-4 rounded shadow">
+            <div class="icon-container">
+              <i class="fas fa-file-medical fa-5x"></i>
+            </div>
+            <h2>المراجعين والمرضى</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <!-- الصف الثاني للمربعات -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <!-- مربع إضافي 1 -->
+          <div class="section bg-light p-4 rounded shadow">
+            <div class="icon-container">
+              <i class="fas fa-user-nurse fa-5x"></i>
+            </div>
+            <h2>الكادر الطبي</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <!-- مربع إضافي 2 -->
+          <div class="section bg-lightgreen p-4 rounded shadow">
+            <div class="icon-container">
+              <i class="fas fa-bed fa-5x"></i>
+            </div>
+            <h2>الأسرة</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-light text-center p-4"
+      style="background-color: #0056b3; color: #fff"
+    >
+      <div>
+        <!-- يمكنك إضافة روابط أو محتوى آخر هنا إذا رغبت -->
+      </div>
+      <div>
+        <p>&copy; 2025 مستشفى الموانئ العام جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- ربط ملف JavaScript -->
+  </body>
+</html>

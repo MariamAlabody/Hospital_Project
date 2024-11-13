@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توريد الكتب</title>
+    <link rel="stylesheet" href="books-supply.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="incoming-documents.html">الوثائق الواردة</a></li>
+                <li><a href="incoming-requests.html">الطلبات الواردة</a></li>
+                <li><a href="incoing-emails.html">البريد الإلكتروني</a></li>
+                <li><a href="books-supply.html">توريد الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>توريد الكتب</h2>
+        
+        <section class="books-list">
+            <h3>قائمة الكتب الموردة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رقم الكتاب</th>
+                        <th>عنوان الكتاب</th>
+                        <th>المؤلف</th>
+                        <th>التاريخ</th>
+                        <th>الاجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>دورة البرمجة المتقدمة</td>
+                        <td>أحمد علي</td>
+                        <td>2024-11-01</td>
+                        <td><button class="action-btn">تفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>إدارة المشاريع الحديثة</td>
+                        <td>سارة محمد</td>
+                        <td>2024-11-03</td>
+                        <td><button class="action-btn">تفاصيل</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-book">
+            <h3>إضافة كتاب جديد</h3>
+            <form action="#" method="POST">
+                <label for="book-number">رقم الكتاب:</label>
+                <input type="text" id="book-number" name="book-number" required><br><br>
+
+                <label for="book-title">عنوان الكتاب:</label>
+                <input type="text" id="book-title" name="book-title" required><br><br>
+
+                <label for="book-author">المؤلف:</label>
+                <input type="text" id="book-author" name="book-author" required><br><br>
+
+                <label for="book-date">التاريخ:</label>
+                <input type="date" id="book-date" name="book-date" required><br><br>
+
+                <button type="submit">إضافة الكتاب</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

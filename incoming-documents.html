@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوثائق الواردة</title>
+    <link rel="stylesheet" href="incoming-documents.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="incoming-documents.html">الوثائق الواردة</a></li>
+                <li><a href="incoming-requests.html">الطلبات الواردة</a></li>
+                <li><a href="incoing-emails.html">البريد الإلكتروني</a></li>
+                <li><a href="books-supply.html">توريد الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>الوثائق الواردة</h2>
+        
+        <section class="document-list">
+            <h3>قائمة الوثائق الواردة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رقم الوثيقة</th>
+                        <th>المصدر</th>
+                        <th>التاريخ</th>
+                        <th>الوصف</th>
+                        <th>الاجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>الوزارة المالية</td>
+                        <td>2024-11-01</td>
+                        <td>تقرير موازنة السنة القادمة</td>
+                        <td><button class="action-btn">تفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>12346</td>
+                        <td>المكتب القانوني</td>
+                        <td>2024-11-02</td>
+                        <td>إعلان قانوني جديد</td>
+                        <td><button class="action-btn">تفاصيل</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-document">
+            <h3>إضافة وثيقة جديدة</h3>
+            <form action="#" method="POST">
+                <label for="doc-number">رقم الوثيقة:</label>
+                <input type="text" id="doc-number" name="doc-number" required><br><br>
+
+                <label for="doc-source">المصدر:</label>
+                <input type="text" id="doc-source" name="doc-source" required><br><br>
+
+                <label for="doc-description">الوصف:</label>
+                <textarea id="doc-description" name="doc-description" required></textarea><br><br>
+
+                <label for="doc-date">التاريخ:</label>
+                <input type="date" id="doc-date" name="doc-date" required><br><br>
+
+                <button type="submit">إضافة الوثيقة</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

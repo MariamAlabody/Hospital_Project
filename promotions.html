@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- تحديد مجموعة الأحرف المستخدمة في الصفحة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- لضبط العرض في مختلف الأجهزة -->
+    <title>الرئيسية - قسم الإدارة</title>
+    <!-- عنوان الصفحة يظهر في شريط العنوان -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" <!-- ربط
+        مكتبة Bootstrap لتصميم واجهة المستخدم -- />
+    <style>
+        /* إعدادات التصميم الخاصة بالصفحة */
+        body {
+            background-color: #f4f4f4;
+            /* لون خلفية الصفحة */
+            font-family: "Arial", sans-serif;
+            /* نوع الخط المستخدم في الصفحة */
+        }
+
+        .navbar {
+            background-color: #007bff;
+            /* لون خلفية شريط التنقل */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+            /* لون النصوص في شريط التنقل */
+        }
+
+        h2 {
+            color: #007bff;
+            /* لون عنوان الصفحة */
+        }
+
+        .card {
+            border: none;
+            /* إزالة الحدود حول البطاقات */
+            border-radius: 10px;
+            /* تعيين زوايا دائرية للبطاقات */
+        }
+
+        .card-header {
+            background-color: #007bff;
+            /* لون خلفية رأس البطاقة */
+            color: #fff;
+            /* لون النص في رأس البطاقة */
+            font-size: 1.5rem;
+            /* حجم خط أكبر لرأس البطاقة */
+        }
+
+        .footer {
+            background-color: #007bff;
+            /* لون خلفية الفوتر */
+            color: #fff;
+            /* لون النص في الفوتر */
+            text-align: center;
+            /* محاذاة النص في المنتصف */
+            padding: 10px 0;
+            /* مسافة داخلية أعلى وأسفل */
+            position: relative;
+            bottom: 0;
+            /* وضع الفوتر في الأسفل */
+            width: 100%;
+            /* عرض الفوتر 100% */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- شريط التنقل -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">قسم الإدارة</a>
+            <!-- عنوان التطبيق -->
+            <div class="collapse navbar-collapse">
+                <!-- التحكم في القائمة المنسدلة في شريط التنقل -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- قائمة الروابط في شريط التنقل -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="promotions.html">قسم الترفيعات</a>
+                        <!-- رابط إلى قسم الترفيعات -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                        <!-- رابط إلى الصفحة الرئيسية -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- حاوية مركزية للصفحة -->
+        <h2 class="text-center mb-4">مرحبا بكم في قسم الإدارة</h2>
+        <!-- عنوان رئيسي -->
+        <p class="text-center">اختر قسمًا للانتقال إليه:</p>
+        <!-- نص إرشادي -->
+
+        <div class="row">
+            <!-- صف لعرض البطاقات -->
+            <div class="col-lg-4 mb-4">
+                <!-- عمود لبطاقة -->
+                <div class="card">
+                    <div class="card-header">مكتب الإدارة العامة</div>
+                    <!-- رأس البطاقة -->
+                    <div class="card-body">
+                        <!-- محتوى البطاقة -->
+                        <p>قم بالانتقال إلى مكتب الإدارة العامة لمزيد من المعلومات.</p>
+                        <!-- نص داخل البطاقة -->
+                        <a href="login.html" class="btn btn-primary">انتقل</a>
+                        <!-- زر للانتقال -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <!-- عمود لبطاقة أخرى -->
+                <div class="card">
+                    <div class="card-header">قسم الذاتية</div>
+                    <div class="card-body">
+                        <p>يمكنك هنا إدارة المعلومات الذاتية للموظفين.</p>
+                        <a href="self-service.html" class="btn btn-primary">انتقل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <!-- عمود لبطاقة ثالثة -->
+                <div class="card">
+                    <div class="card-header">قسم معلومات الموظفين</div>
+                    <div class="card-body">
+                        <p>استعرض معلومات جميع الموظفين هنا.</p>
+                        <a href="employee-information.html" class="btn btn-primary">انتقل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- الفوتر -->
+        <div class="container">
+            <p>&copy; 2024 جميع الحقوق محفوظة</p>
+            <!-- نص حقوق الملكية -->
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ربط مكتبة jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- ربط مكتبة Bootstrap JavaScript -->
+</body>
+
+</html>

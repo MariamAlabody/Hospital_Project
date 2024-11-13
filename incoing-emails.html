@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البريد الإلكتروني</title>
+    <link rel="stylesheet" href="incoing-emails.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="incoming-documents.html">الوثائق الواردة</a></li>
+                <li><a href="incoming-requests.html">الطلبات الواردة</a></li>
+                <li><a href="incoing-emails.html">البريد الإلكتروني</a></li>
+                <li><a href="books-supply.html">توريد الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>البريد الإلكتروني</h2>
+        
+        <section class="email-list">
+            <h3>قائمة الرسائل الواردة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>المرسل</th>
+                        <th>الموضوع</th>
+                        <th>التاريخ</th>
+                        <th>الاجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>admin@company.com</td>
+                        <td>تقرير الأداء الشهري</td>
+                        <td>2024-11-01</td>
+                        <td><button class="action-btn">قراءة</button></td>
+                    </tr>
+                    <tr>
+                        <td>info@company.com</td>
+                        <td>تنبيه: تحديثات النظام</td>
+                        <td>2024-11-02</td>
+                        <td><button class="action-btn">قراءة</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="compose-email">
+            <h3>إرسال بريد إلكتروني</h3>
+            <form action="#" method="POST">
+                <label for="email-to">إلى:</label>
+                <input type="email" id="email-to" name="email-to" required><br><br>
+
+                <label for="email-subject">الموضوع:</label>
+                <input type="text" id="email-subject" name="email-subject" required><br><br>
+
+                <label for="email-body">المحتوى:</label>
+                <textarea id="email-body" name="email-body" required></textarea><br><br>
+
+                <button type="submit">إرسال البريد</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

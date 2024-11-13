@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطلبات الواردة</title>
+    <link rel="stylesheet" href="incoming-requests.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="incoming-documents.html">الوثائق الواردة</a></li>
+                <li><a href="incoming-requests.html">الطلبات الواردة</a></li>
+                <li><a href="incoing-emails.html">البريد الإلكتروني</a></li>
+                <li><a href="books-supply.html">توريد الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>الطلبات الواردة</h2>
+        
+        <section class="request-list">
+            <h3>قائمة الطلبات الواردة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رقم الطلب</th>
+                        <th>المتقدم بالطلب</th>
+                        <th>التاريخ</th>
+                        <th>الوصف</th>
+                        <th>الاجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="request-table-body">
+                    <!-- الطلبات الجديدة ستضاف هنا -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-request">
+            <h3>إضافة طلب جديد</h3>
+            <!-- تحديث نموذج الطلب باستدعاء الدالة addRequest عند الضغط على الزر -->
+            <form id="add-request-form" onsubmit="addRequest(); return false;">
+                <label for="request-number">رقم الطلب:</label>
+                <input type="text" id="request-number" name="request-number" required><br><br>
+
+                <label for="requester-name">اسم المتقدم:</label>
+                <input type="text" id="requester-name" name="requester-name" required><br><br>
+
+                <label for="request-description">الوصف:</label>
+                <textarea id="request-description" name="request-description" required></textarea><br><br>
+
+                <label for="request-date">التاريخ:</label>
+                <input type="date" id="request-date" name="request-date" required><br><br>
+
+                <button type="submit">إضافة الطلب</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- ربط ملف JavaScript في نهاية الصفحة -->
+    <script src="incoming-requests.js"></script>
+</body>
+</html>

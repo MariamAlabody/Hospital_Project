@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كتب صادرة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="issued.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="issued.html">إضافة كتاب صادر</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>إضافة كتاب صادر جديد</h2>
+
+        <!-- نموذج إضافة كتاب صادر -->
+        <form id="outgoing-book-form">
+            <label for="book-title">عنوان الكتاب:</label>
+            <input type="text" id="book-title" name="book-title" required><br>
+
+            <label for="send-date">تاريخ الإرسال:</label>
+            <input type="date" id="send-date" name="send-date" required><br>
+
+            <label for="recipient">المستلم:</label>
+            <input type="text" id="recipient" name="recipient" required><br>
+
+            <label for="remarks">ملاحظات:</label>
+            <textarea id="remarks" name="remarks"></textarea><br>
+
+            <button type="submit">إضافة الكتاب</button>
+        </form>
+
+        <!-- جدول عرض الكتب الصادرة -->
+        <h3>الكتب الصادرة</h3>
+        <table id="outgoing-book-table">
+            <thead>
+                <tr>
+                    <th>الرقم</th>
+                    <th>عنوان الكتاب</th>
+                    <th>تاريخ الإرسال</th>
+                    <th>المستلم</th>
+                    <th>ملاحظات</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم إضافة الصفوف هنا باستخدام جافا سكربت -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="issued.js"></script>
+</body>
+</html>

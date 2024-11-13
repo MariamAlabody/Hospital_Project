@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الموارد البشرية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="hr-department.html">الموارد البشرية</a></li>
+                <li><a href="email.html">البريد ألالكتروني</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>إدارة الموارد البشرية</h2>
+        <p>هنا يمكنك إضافة البريد الإلكتروني للموظفين أو الموارد البشرية وإدارته.</p>
+
+        <!-- قسم البريد الإلكتروني -->
+        <div id="email-section">
+            <h3>إضافة بريد إلكتروني</h3>
+            <form id="email-form">
+                <label for="employee-name">اسم الموظف:</label>
+                <input type="text" id="employee-name" name="employee-name" required><br>
+
+                <label for="employee-email">البريد الإلكتروني:</label>
+                <input type="email" id="employee-email" name="employee-email" required><br>
+
+                <button type="submit">إضافة بريد إلكتروني</button>
+            </form>
+
+            <!-- جدول عرض البريد الإلكتروني -->
+            <h3>البريد الإلكتروني للموظفين</h3>
+            <table id="email-table">
+                <thead>
+                    <tr>
+                        <th>رقم الموظف</th>
+                        <th>اسم الموظف</th>
+                        <th>البريد الإلكتروني</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- سيتم إضافة الصفوف هنا باستخدام جافا سكربت -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="email.js"></script>
+</body>
+</html>

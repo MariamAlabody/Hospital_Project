@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة هوية جديدة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="identit.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">إضافة هوية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>إضافة هوية جديدة</h2>
+
+        <!-- نموذج إضافة هوية جديدة -->
+        <form id="identity-form">
+            <label for="identity-name">اسم الشخص:</label>
+            <input type="text" id="identity-name" name="identity-name" required><br>
+
+            <label for="identity-number">رقم الهوية:</label>
+            <input type="text" id="identity-number" name="identity-number" required><br>
+
+            <label for="identity-issue-date">تاريخ الإصدار:</label>
+            <input type="date" id="identity-issue-date" name="identity-issue-date" required><br>
+
+            <label for="identity-expiry-date">تاريخ الانتهاء:</label>
+            <input type="date" id="identity-expiry-date" name="identity-expiry-date" required><br>
+
+            <button type="submit">إضافة الهوية</button>
+        </form>
+
+        <!-- جدول عرض الهوية -->
+        <h3>الهوية المضافة</h3>
+        <table id="identity-table">
+            <thead>
+                <tr>
+                    <th>الرقم</th>
+                    <th>اسم الشخص</th>
+                    <th>رقم الهوية</th>
+                    <th>تاريخ الإصدار</th>
+                    <th>تاريخ الانتهاء</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم إضافة الصفوف هنا باستخدام جافا سكربت -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="identis.js"></script>
+</body>
+</html>

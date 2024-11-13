@@ -1,0 +1,166 @@
+/* تنسيق شريط التنقل */
+.navbar {
+  margin-bottom: 20px; /* مسافة أسفل شريط التنقل */
+  background-color: #007bff; /* لون خلفية أزرق */
+}
+
+.navbar-brand {
+  font-size: 24px; /* حجم خط اسم الموقع */
+  font-weight: bold; /* جعل الخط عريض */
+}
+
+.nav-link {
+  font-size: 18px; /* حجم خط روابط التنقل */
+  padding: 10px 15px; /* padding حول الروابط */
+  transition: background-color 0.3s, color 0.3s; /* تأثير انتقال */
+}
+
+/* تأثير عند التمرير على الروابط */
+.nav-link:hover {
+  background-color: #0056b3; /* خلفية أزرق داكن عند التمرير */
+  color: white; /* لون النص أبيض */
+}
+
+/* ألوان الخلفيات */
+.bg-lightgray {
+  background-color: #f0f0f0; /* لون خلفية رمادي فاتح */
+}
+
+.bg-lightgreen {
+  background-color: #d4edda; /* لون خلفية أخضر فاتح */
+}
+
+.bg-lightblue {
+  background-color: #cfe2ff; /* لون خلفية أزرق فاتح */
+}
+
+.section {
+  padding: 30px; /* مسافة داخلية للأقسام */
+  color: #333; /* لون النص */
+  border-top-left-radius: 20px; /* زاوية دائرية في أعلى يسار القسم */
+  border-top-right-radius: 20px; /* زاوية دائرية في أعلى يمين القسم */
+  background-color: white; /* خلفية بيضاء */
+  margin: 0; /* إزالة المسافات الجانبية */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+  position: relative; /* لجعل القسم يتفاعل بشكل أفضل مع العناصر */
+  min-height: 200px; /* حد أدنى للارتفاع */
+}
+
+/* لتوسيع العرض ليغطي كامل الشاشة */
+.full-width {
+  width: 100%; /* جعل العرض 100% */
+  margin: 10px 0; /* إضافة مسافة عمودية بين الأقسام */
+}
+
+.text-center i {
+  color: #007bff; /* لون الأيقونات */
+  margin-bottom: 15px; /* مسافة أسفل الأيقونات */
+}
+
+/* تأثيرات تمرير سلس */
+html {
+  scroll-behavior: smooth; /* تأثير التمرير السلس */
+}
+
+/* تنسيق نصوص الأقسام */
+h2 {
+  font-size: 24px; /* حجم خط العناوين */
+  font-weight: bold; /* جعل الخط عريض */
+}
+
+p {
+  font-size: 16px; /* حجم خط الفقرات */
+  margin-top: 10px; /* مسافة فوق الفقرات */
+}
+
+/* تأثيرات التمرير */
+.navbar-nav .nav-link:hover {
+  color: #fff; /* لون النص عند التمرير */
+  text-decoration: unset; /* إزالة خط تحت النص */
+}
+
+/* ضبط اتجاه النص للغات التي تكتب من اليمين لليسار */
+body {
+  direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+/* تنسيق الأقسام */
+.section {
+  border-radius: 15px; /* حواف دائرية */
+  padding: 20px; /* padding داخلي */
+}
+
+/* ألوان الخلفيات */
+.bg-lightgray {
+  background-color: #f0f0f0; /* لون خلفية رمادي فاتح */
+}
+
+.bg-lightgreen {
+  background-color: #d4edda; /* لون خلفية أخضر فاتح */
+}
+
+.bg-lightblue {
+  background-color: #cfe2ff; /* لون خلفية أزرق فاتح */
+}
+
+/* تخصيص النصوص */
+h2 {
+  font-size: 22px; /* حجم خط العناوين */
+  margin: 0; /* إزالة المسافة العلوية والسفلية */
+  color: #333; /* لون النص */
+}
+/* تنسيق الأقسام */
+.section {
+  border-radius: 15px; /* حواف دائرية */
+  padding: 20px; /* padding داخلي */
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثير التحويل والظل */
+}
+
+/* ألوان الخلفيات */
+.bg-lightgray {
+  background-color: #f0f0f0; /* لون خلفية رمادي فاتح */
+}
+
+.bg-lightgreen {
+  background-color: #d4edda; /* لون خلفية أخضر فاتح */
+}
+
+.bg-lightblue {
+  background-color: #cfe2ff; /* لون خلفية أزرق فاتح */
+}
+
+/* تخصيص النصوص */
+h2 {
+  font-size: 22px; /* حجم خط العناوين */
+  margin: 15px 0 0; /* المسافة العلوية والسفلية */
+  color: #333; /* لون النص */
+}
+
+/* تغيير شكل الأيقونات */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; /* مسافة تحت الأيقونة */
+}
+
+/* تأثيرات الظل والتكبير عند المرور */
+.section:hover {
+  transform: translateY(-5px); /* تحريك لأعلى */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+}
+
+footer {
+  background-color:#0056b3 ; /* لون خلفية أزرق */
+  color: rgb(0, 0, 0); /* لون النص أبيض */
+  padding: 20px 0; /* مسافة داخلية */
+  text-align: center; /* توسيط النص */
+  width: 100%; /* جعل الفوتر يغطي العرض الكامل */
+  position: relative; /* لجعل العناصر تتفاعل بشكل أفضل */
+  bottom: 0; /* لضمان أن الفوتر في الأسفل */
+}
+
+/* لتحديد الفقرات داخل الفوتر */
+footer p {
+  margin: 0; /* إزالة المسافة حول الفقرة */
+  font-size: 16px; /* حجم الخط */
+}

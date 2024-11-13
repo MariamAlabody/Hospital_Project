@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f9fa; /* لون خلفية */
+}
+.navbar {
+    background-color: #007bff; /* لون شريط التنقل */
+}
+.navbar-brand, .nav-link {
+    color: white; /* لون النص */
+}
+.section {
+    background-color: #ffffff; /* خلفية القسم */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل */
+    padding: 40px; /* مسافة داخلية */
+}
+.section h2 {
+    font-size: 2rem; /* حجم الخط */
+    margin-bottom: 20px; /* فراغ سفلي */
+}
+.btn {
+    width: 100%; /* عرض الأزرار كامل */
+    padding: 15px; /* مسافة داخلية */
+    font-size: 1.2rem; /* حجم خط الأزرار */
+    background-color: #6c757d; /* لون الأزرار الافتراضي (رمادي) */
+    border: none; /* بدون حدود */
+    color: white; /* لون النص */
+    transition: background-color 0.3s; /* تأثير انتقال اللون */
+    display: flex; /* جعل الأزرار كفليكس */
+    align-items: center; /* محاذاة العمود */
+    justify-content: flex-start; /* محاذاة النص والأيقونة لليسار */
+}
+.btn i {
+    margin-right: 20px; /* فراغ بين الأيقونة والنص */
+    font-size: 2rem; /* حجم الأيقونة */
+    align-self: center; /* محاذاة الأيقونة في الوسط عمودياً */
+}
+.btn:hover {
+    background-color: #007bff; /* لون الزر عند التمرير */
+}
+.btn:focus {
+    background-color: #0056b3; /* لون الزر عند الضغط */
+    outline: none; /* إزالة الحدود */
+}
+@media (min-width: 768px) {
+    .section {
+        max-width: 600px; /* عرض القسم في الشاشات الكبيرة */
+        margin: auto; /* محاذاة للوسط */
+    }
+}
